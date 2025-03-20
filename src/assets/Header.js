@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Logo = () => {
     return(
-        <h1 className="black-text"><span className="rose-text">First</span> and <span className="mustard-text">Proud</span></h1>
+        <h1 className="black-text bree-serif"><span className="rose-text">First</span> and <span className="mustard-text">Proud</span></h1>
     );
 }
 
@@ -10,7 +10,7 @@ const Logo = () => {
 
 const Navbar = () => {
     return (
-        <nav className="rose-background">
+        <nav className="flex-parent istok-web">
             <ul>
                 <li><NavLink to="/" className="black-text small-font">Home</NavLink></li>
                 <li><NavLink to="/" className="black-text small-font">College Match</NavLink></li>
@@ -22,7 +22,7 @@ const Navbar = () => {
 
 function Header() {
     return(
-        <header>
+        <header className="flex-parent">
             <Logo />
             <Navbar />
         </header>
