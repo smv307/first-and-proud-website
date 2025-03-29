@@ -1,195 +1,313 @@
 :root {
-    --peach: #ffb8a7;
-    --rose: #d88888;
-    --mustard: #e5b964;
-    --yellow: #f3ea99;
-    --off-white: #f1efe5;
+  --peach: #ffb8a7;
+  --rose: #d88888;
+  --mustard: #e5b964;
+  --yellow: #f3ea99;
+  --off-white: #f1efe5;
+}
+
+/* ========================= */
+/* B A C K G R O U N D   C O L O R S */
+/* ========================= */
+
+.peach-bg {
+  background-color: var(--peach);
+}
+
+.rose-bg {
+  background-color: var(--rose);
+}
+
+.mustard-bg {
+  background-color: var(--mustard);
+}
+
+.yellow-bg {
+  background-color: var(--yellow);
+}
+
+.off-white-bg {
+  background-color: var(--off-white);
+}
+
+/* ========================= */
+/* T E X T   C O L O R S */
+/* ========================= */
+
+.rose-text {
+  color: var(--rose);
+}
+
+.yellow-text {
+  color: var(--yellow);
+}
+
+.mustard-text {
+  color: var(--mustard);
+}
+
+.black-text {
+  color: black;
+}
+
+/* ========================= */
+/* F O N T S */
+/* ========================= */
+
+.xlarge-font {
+  font-size: 4rem;
+}
+
+.large-font {
+  font-size: 2rem;
+}
+
+.med-font {
+  font-size: 1.5rem;
+}
+
+.small-font {
+  font-size: 1.3rem;
+}
+
+.bree-serif {
+  font-family: "Bree Serif", serif;
+}
+
+.istok-web {
+  font-family: "Istok Web", sans-serif;
+}
+
+.inria-sans {
+  font-family: "Inria Sans", sans-serif;
+}
+
+/* ========================= */
+/* F L E X  &  L A Y O U T */
+/* ========================= */
+
+.flex-parent {
+  display: flex;
+}
+
+header {
+  justify-content: flex-start;
+  margin: 10px 30px;
+}
+
+/* ========================= */
+/* I M A G E S */
+/* ========================= */
+
+figure {
+  margin: 0;
+}
+
+/* ========================= */
+/* N A V I G A T I O N */
+/* ========================= */
+
+nav ul {
+  list-style: none;
+  padding-top: 17px;
+}
+
+nav li {
+  display: inline-block;
+  margin-inline: 20px;
+  font-weight: 550;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+/* ========================= */
+/* B U T T O N S */
+/* ========================= */
+
+button {
+  background-color: black;
+  color: var(--off-white);
+  font-weight: bolder;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* ========================= */
+/* L A N D E R  S E C T I O N */
+/* ========================= */
+
+#lander-section {
+  justify-content: space-between;
+}
+
+.lander-image {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 30%;
+  height: 500px;
+}
+
+.med-padding {
+  padding: 50px 170px;
+}
+
+/* ========================= */
+/* I N F O  S E C T I O N */
+/* ========================= */
+
+#info-section {
+  margin-top: 200px;
+  justify-content: space-evenly;
+}
+
+#information-text {
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+h3 {
+  margin-block: 50px;
+}
+
+/* ========================= */
+/* C O N T A C T  S E C T I O N */
+/* ========================= */
+
+#contact-section {
+  margin-top: 80px;
+  justify-content: space-between;
+  padding: 20px 150px;
+}
+
+.contact-item {
+  gap: 20px;
+  align-items: center;
+}
+/* ========================= */
+/* S E P A R A T O R S */
+/* ========================= */
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--rose);
+}
+
+.bg-square {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  z-index: -5;
+}
+
+/* ========================= */
+/* M O B I L E   R E S P O N S I V E */
+/* ========================= */
+
+@media (max-width: 768px) {
+  /* Stack elements vertically */
+  .flex-parent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
   }
-  
-  /* ========================= */
-  /* T E X T   C O L O R S */
-  /* ========================= */
-  
-  .peach-bg {
-    background-color: var(--peach);
+
+
+
+  /* navigation bar */
+  nav {
+    padding: 15px;
   }
-  
-  .rose-bg {
-    background-color: var(--rose);
+
+  nav ul {
+    padding: 0;
   }
-  
-  .mustard-bg {
-    background-color: var(--mustard);
+
+  nav li {
+    width: 100%;
   }
-  
-  .yellow-bg {
-    background-color: var(--yellow);
+
+  ul {
+    padding-left: 0;
   }
-  
-  .off-white-bg {
-    background-color: var(--off-white);
-  }
-  
-  .rose-text {
-    color: var(--rose);
-  }
-  
-  .mustard-text {
-    color: var(--mustard);
-  }
-  
-  .black-text {
-    color: black;
-  }
-  
-  /* ========================= */
-  /* T Y P O G R A P H Y */
-  /* ========================= */
-  
+
+  /* fonts */
   .xlarge-font {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
-  
+
   .large-font {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
-  
+
   .med-font {
-    font-size: 1.5rem;
-  }
-  
-  .small-font {
     font-size: 1.3rem;
   }
-  
-  .bree-serif {
-    font-family: "Bree Serif", serif;
+
+  .small-font {
+    font-size: 1rem;
   }
-  
-  .istok-web {
-    font-family: "Istok Web", sans-serif;
-  }
-  
-  .inria-sans {
-    font-family: "Inria Sans", sans-serif;
-  }
-  
-  /* ========================= */
-  /* F L E X  &  L A Y O U T */
-  /* ========================= */
-  
-  .flex-parent {
-    display: flex;
-  }
-  
-  article {
-    justify-content: space-between;
-  }
-  
-  header {
-    justify-content: flex-start;
-    margin: 10px 30px;
-  }
-  
-  /* ========================= */
-  /* N A V I G A T I O N */
-  /* ========================= */
-  
-  nav ul {
-    list-style: none;
-    padding-top: 17px;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-inline: 20px;
-    font-weight: 550;
-  }
-  
-  nav a {
-    text-decoration: none;
-  }
-  
-  /* ========================= */
-  /* B U T T O N S */
-  /* ========================= */
-  
+
+  /* button  */
+
   button {
-    background-color: black;
-    color: var(--off-white);
-    font-weight: bolder;
-    border: none;
-    padding: 10px 40px;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-top: 40px;
+    width: 90%;
+    padding: 14px;
+    font-size: 1.2rem;
+    border-radius: 12px;
   }
-  
-  button:hover {
-    opacity: 0.85;
+
+  /* style */
+
+  figure img {
+    max-width: 100%;
+    height: auto;
   }
-  
-  /* ========================= */
-  /* L A N D E R  S E C T I O N */
-  /* ========================= */
-  
-  .lander-image {
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 30%;
-    height: 500px;
-  }
-  
+
   .med-padding {
-    padding: 50px 170px;
+    padding: 0px; /* Reduce padding for mobile */
   }
-  
-  /* ========================= */
-  /* S E P A R A T O R S */
-  /* ========================= */
-  
-  .line {
-    width: 100%;
-    height: 2px;
-    background-color: var(--rose);
+
+  /* sections */
+
+  .lander-img {
+    display: none;
   }
-  
-  /* ========================= */
-  /* M O B I L E   R E S P O N S I V E */
-  /* ========================= */
-  
-  @media (max-width: 768px) {
-    .flex-parent {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    nav {
-      flex-wrap: nowrap;
-      padding: 15px 20px;
-    }
-  
-    .lander {
-      flex-direction: column;
-      padding: 30px 20px;
-    }
-  
-    .xlarge-font {
-      font-size: 3rem;
-    }
-  
-    .large-font {
-      font-size: 2rem;
-    }
-  
-    .small-font {
-      font-size: 1rem;
-    }
-  
-    button {
-      width: 100%;
-      padding: 12px;
-    }
+
+  #lander-section,
+  #info-section,
+  #contact-section {
+    padding: 20px;
   }
-  
+
+  #info-section {
+    margin-top: 100px;
+  }
+
+  #navbar {
+    flex-direction: row;
+  }
+
+  header {
+    margin: 0;
+  }
+  #contact-section {
+    margin-top: 50px;
+
+    padding: 20px;
+  }
+}
