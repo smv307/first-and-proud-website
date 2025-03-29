@@ -193,6 +193,7 @@ h3 {
   gap: 20px;
   align-items: center;
 }
+
 /* ========================= */
 /* S E P A R A T O R S */
 /* ========================= */
@@ -215,6 +216,7 @@ h3 {
 /* ========================= */
 
 @media (max-width: 768px) {
+
   /* Stack elements vertically */
   .flex-parent {
     flex-direction: column;
@@ -279,7 +281,8 @@ h3 {
   }
 
   .med-padding {
-    padding: 0px; /* Reduce padding for mobile */
+    padding: 0px;
+    /* Reduce padding for mobile */
   }
 
   /* sections */
@@ -305,6 +308,7 @@ h3 {
   header {
     margin: 0;
   }
+
   #contact-section {
     margin-top: 50px;
 
