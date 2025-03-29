@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 const Logo = () => {
-    return(
+    return (
         <h1 className="black-text bree-serif"><span className="rose-text">First</span> and <span className="mustard-text">Proud</span></h1>
     );
 }
@@ -29,7 +29,7 @@ const Navbar = () => {
 }
 
 function Header() {
-    return(
+    return (
         <header className="flex-parent">
             <Logo />
             <Navbar />
