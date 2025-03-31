@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/first-and-proud-website/static/css/main.31b2b79f.css",
-    "main.js": "/first-and-proud-website/static/js/main.9c2af1c5.js",
+    "main.js": "/first-and-proud-website/static/js/main.b98333aa.js",
     "static/js/453.a0fddefe.chunk.js": "/first-and-proud-website/static/js/453.a0fddefe.chunk.js",
     "index.html": "/first-and-proud-website/index.html",
     "main.31b2b79f.css.map": "/first-and-proud-website/static/css/main.31b2b79f.css.map",
-    "main.9c2af1c5.js.map": "/first-and-proud-website/static/js/main.9c2af1c5.js.map",
+    "main.b98333aa.js.map": "/first-and-proud-website/static/js/main.b98333aa.js.map",
     "453.a0fddefe.chunk.js.map": "/first-and-proud-website/static/js/453.a0fddefe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31b2b79f.css",
-    "static/js/main.9c2af1c5.js"
+    "static/js/main.b98333aa.js"
   ]
 }
