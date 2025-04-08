@@ -212,6 +212,23 @@ h3 {
 }
 
 /* ========================= */
+/* C O L L E G E  G R I D */
+/* ========================= */
+
+#college-grid {
+  display: grid;
+  grid-template-columns: "repeat(auto-fit, minmax(300px, 1fr))";
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+  margin: 50px;
+}
+
+.college-card {
+  background-color: var(--rose); /*make random later*/
+  border-radius: 20px;
+  padding: 20px;
+}
+/* ========================= */
 /* M O B I L E   R E S P O N S I V E */
 /* ========================= */
 
