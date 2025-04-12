@@ -54,4 +54,15 @@ function Contact() {
     );
 }
 
-export { Information, Lander, Contact };
+const Homepage = () => {
+    return(
+        <main>
+            <Lander />
+            <Information />
+            <Contact />
+        </main>
+    )
+}
+
+export default Homepage;
+

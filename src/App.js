@@ -1,22 +1,22 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./styles.css";
 
 import Header from './assets/Header.js';
-import CollegeGrid from './assets/CollegeData.js';
-import { Lander, Information, Contact } from './assets/Homepage.js';
-
+import CollegeMatch from './assets/CollegeMatch.js';
+import Homepage from './assets/Homepage.js';
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Header />
       <div className="line rose-bg"></div>
-      <Lander />
-      <Information />
-      <Contact />
-      <CollegeGrid zipCode="94602" maxCost={20000}/>
-    </BrowserRouter>
+
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/college-match" element={<CollegeMatch />} />
+      </Routes>
+    </Router>
   );
 }
 

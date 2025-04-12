@@ -4,6 +4,7 @@
   --mustard: #e5b964;
   --yellow: #f3ea99;
   --off-white: #f1efe5;
+  --darker-off-white: #ecead9;
 }
 
 /* ========================= */
@@ -28,6 +29,10 @@
 
 .off-white-bg {
   background-color: var(--off-white);
+}
+
+.darker-off-white-bg {
+  background-color: var(--darker-off-white);
 }
 
 /* ========================= */
@@ -88,6 +93,7 @@
 
 .flex-parent {
   display: flex;
+  flex-wrap: wrap;
 }
 
 header {
@@ -201,6 +207,7 @@ h3 {
 .line {
   width: 100%;
   height: 2px;
+  background-color: var(--rose);
 }
 
 .bg-square {
@@ -216,7 +223,8 @@ h3 {
 
 #college-grid {
   display: grid;
-  grid-template-columns: "repeat(auto-fit, minmax(300px, 1fr))";
+  flex-wrap: wrap;
+
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 50px;
   margin: 50px;
@@ -226,6 +234,41 @@ h3 {
   border-radius: 20px;
   padding: 20px 50px;
 }
+
+/* ========================= */
+/* F I L T E R S */
+/* ========================= */
+
+#filters {
+  padding: 50px 40px;
+}
+
+.filter {
+  margin-block: 30px;
+}
+
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: var(--peach);
+  outline: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--rose);
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+}
+
 /* ========================= */
 /* M O B I L E   R E S P O N S I V E */
 /* ========================= */
