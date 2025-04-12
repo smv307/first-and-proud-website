@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
+require('dotenv').config();
 
-const API_KEY = "u0MSwGAJeHpEmDJZrsVbtgAVvMy1GVcFkExDlJy2";
+const API_KEY = process.env.API_KEY;
 const BASE_URL = "https://api.data.gov/ed/collegescorecard/v1/schools";
 
 // =========================
@@ -30,7 +31,9 @@ const Slider = ({ min, max, step, label, unit, suffix, initialValue, onChange })
   const updateValue = (e) => {
     const newValue = Number(e.target.value);
     setValue(newValue);
-    onChange?.(newValue);
+    if (onChange) {
+      onChange(val);
+    }
   };
 
   return (
@@ -237,6 +240,5 @@ const CollegeMatch = () => {
     </main>
   );
 };
-
 
 export default CollegeMatch;
