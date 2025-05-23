@@ -11,7 +11,7 @@ function Lander() {
                 <button className="inria-sans small-font">LEARN MORE</button>
             </section>
             <figure>
-                <img src="./images/gradcap.png" id="lander-image" alt="Graduation cap" className="lander-img" width="100%" />
+                <img src="/images/gradcap.png" id="lander-image" alt="Graduation cap" className="lander-img" width="100%" />
             </figure>
         </article>
     );
