@@ -10,7 +10,7 @@ function Lander() {
                 <div className="line rose-bg"></div>
                 <button className="inria-sans small-font">LEARN MORE</button>
             </section>
-            <figure>
+            <figure id="lander-img-wrap">
                 <img src="/images/gradcap.png" id="lander-image" alt="Graduation cap" className="lander-img" width="100%" />
             </figure>
         </article>

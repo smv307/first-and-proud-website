@@ -151,19 +151,19 @@ button:hover {
 /* L A N D E R  S E C T I O N */
 /* ========================= */
 
-#lander-section {
-  justify-content: space-between;
+.lander-img {
+  display: block;
+  flex: 1 1 0;
+  max-width: none;
+  width: 90%;
+  height: auto;
+  min-width: 0;
 }
 
-.lander-image {
-  position: absolute;
-  top: 80px;
-  right: 0;
-  width: 30%;
-  height: 500px;
-}
 
 .med-padding {
+  flex: 1 1 0;
+  min-width: 0;
   padding: 50px 170px;
 }
 

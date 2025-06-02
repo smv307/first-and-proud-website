@@ -1,6 +1,6 @@
 {
   "name": "first-proud-website",
-  "homepage": "https://first-and-proud-website.vercel.app/",
+  "homepage": "https://first-and-proud-website.vercel.app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
